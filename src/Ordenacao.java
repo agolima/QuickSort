@@ -1,12 +1,12 @@
 public class Ordenacao {
-	
+
 	public int[] quickSort(int[] vetor, int inicio, int fim) {
 		if (inicio < fim) {
 			int posicaoPivo = separar(vetor, inicio, fim);
 			quickSort(vetor, inicio, posicaoPivo - 1);
 			quickSort(vetor, posicaoPivo + 1, fim);
 		}
-		
+
 		return vetor;
 	}
 
